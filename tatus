@@ -1,0 +1,9 @@
+[33m7ccc092[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m first commit
+[33meff1bc4[m readme atualizado auth working
+[33m92302fd[m Correção: variáveis de ambiente Google OAuth para AUTH_GOOGLE_ID e AUTH_GOOGLE_SECRET
+[33mf0f7fbe[m Correção de segurança: env.example limpo sem credenciais reais
+[33m9e7df33[m README.md completo e correção do erro DialogHeader - projeto pronto para Fase 1
+[33m8808c6e[m Página de teste de dependências criada - todas funcionando corretamente
+[33mba29134[m Dependências pré-aprovadas instaladas: papaparse, xlsx, radix-ui, lucide-react, clsx, recharts
+[33m512f7bb[m Fase 0 (Setup Básico) - Projeto Next.js com NextAuth, Tailwind e Storage JSON funcionando
+[33mf05a2c1[m chore: fase 0 – setup básico (Next.js 14.2.32, React 18.3.1, TS 5.4.5, Tailwind 3.4.3, NextAuth 4.24.7)
