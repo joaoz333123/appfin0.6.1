@@ -1,0 +1,21 @@
+---
+alwaysApply: true
+---
+## Processo de Aprovação de Nova Dependência
+
+### Template de Solicitação (IA deve usar):
+```
+SOLICITAÇÃO DE NOVA DEPENDÊNCIA
+
+DEPENDÊNCIA: [nome exato]
+VERSÃO: [versão específica]
+FUNCIONALIDADE: [para que exatamente é necessária]
+
+JUSTIFICATIVAS:
+1. Impossível implementar sem esta dependência? [sim/não + explicação]
+2. Não existe no stack atual algo que faça isso? [verificação]
+3. Tamanho estimado: [KB que vai adicionar]
+4. Dependências próprias dela: [lista outras que vai puxar]
+5. Compatibilidade: [funciona com nosso stack atual?]
+
+AGUARDANDO APROVAÇÃO PARA PROSSEGUIR.

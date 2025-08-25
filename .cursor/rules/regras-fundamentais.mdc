@@ -1,0 +1,55 @@
+---
+alwaysApply: true
+---
+REGRAS FUNDAMENTAIS QUE VOCÊ DEVE SEGUIR:
+1. Implemente apenas o que eu pedir especificamente
+2. SEMPRE pergunte antes de adicionar qualquer funcionalidade extra
+3. NUNCA mude versões de dependências sem minha aprovação explícita
+4. Mantenha código simples e bem documentado
+5. Não use padrões complexos sem necessidade real
+6. Teste cada funcionalidade antes de considerar completa
+7. Uma funcionalidade por vez - NUNCA múltiplas simultaneamente
+
+STACK APROVADA MANUALMENTE:
+✅ Next.js: versão 14.2.32 (fonte: nextjs.org)
+✅ React: versão 18.3.1 (fonte: react.dev)
+✅ TypeScript: versão 5.4.5 (fonte: typescriptlang.org)
+✅ Tailwind: versão 3.4.3 (fonte: tailwindcss.com)
+✅ NextAuth: versão 4.24.7 (fonte: npmjs.com / next‑aut)
+
+PROJETO: AppFin - plataforma de chat com IA que se expande modularmente
+
+METODOLOGIA:
+- Desenvolvimento em fases pequenas e controladas
+- Cada fase tem critérios de aceitação claros
+- Só avança para próxima fase quando atual está 100% funcionando
+
+FORMATO OBRIGATÓRIO para qualquer nova dependência:
+"Preciso adicionar [NOME] versão [VERSÃO] para [FUNCIONALIDADE]. Posso proceder?"
+
+REGRAS FUNDAMENTAIS QUE VOCÊ DEVE SEGUIR:
+1. Implemente apenas o que eu pedir especificamente
+2. SEMPRE pergunte antes de adicionar qualquer funcionalidade extra
+3. NUNCA mude versões de dependências sem minha aprovação explícita
+4. Mantenha código simples e bem documentado
+5. Não use padrões complexos sem necessidade real
+6. Teste cada funcionalidade antes de considerar completa
+7. Uma funcionalidade por vez - NUNCA múltiplas simultaneamente
+
+STACK APROVADA MANUALMENTE:
+✅ Next.js: versão 14.2.32 (fonte: nextjs.org)
+✅ React: versão 18.3.1 (fonte: react.dev)
+✅ TypeScript: versão 5.4.5 (fonte: typescriptlang.org)
+✅ Tailwind: versão 3.4.3 (fonte: tailwindcss.com)
+✅ NextAuth: versão 4.24.7 (fonte: npmjs.com / next‑aut)
+
+PROJETO: AppFin - plataforma de chat com IA que se expande modularmente
+
+METODOLOGIA:
+- Desenvolvimento em fases pequenas e controladas
+- Cada fase tem critérios de aceitação claros
+- Só avança para próxima fase quando atual está 100% funcionando
+
+FORMATO OBRIGATÓRIO para qualquer nova dependência:
+"Preciso adicionar [NOME] versão [VERSÃO] para [FUNCIONALIDADE]. Posso proceder?"
+
