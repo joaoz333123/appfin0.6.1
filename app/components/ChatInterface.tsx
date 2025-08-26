@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { ChatMessage } from '../types/chat';
+// import { FileUpload } from '../types/fileUpload'; // Não usado diretamente
 
 interface ChatInterfaceProps {
   onSendMessage: (message: string) => Promise<void>;
@@ -11,7 +12,11 @@ interface ChatInterfaceProps {
 
 export default function ChatInterface({ onSendMessage, messages, isLoading }: ChatInterfaceProps) {
   const [inputMessage, setInputMessage] = useState('');
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [uploadProgress, setUploadProgress] = useState<string>('');
+  const [isUploading, setIsUploading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -26,6 +31,66 @@ export default function ChatInterface({ onSendMessage, messages, isLoading }: Ch
     if (inputMessage.trim() && !isLoading) {
       await onSendMessage(inputMessage.trim());
       setInputMessage('');
+    }
+  };
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      setSelectedFile(file);
+    }
+  };
+
+  const handleFileUpload = async () => {
+    if (!selectedFile) return;
+
+    setIsUploading(true);
+    setUploadProgress('Iniciando upload...');
+
+    try {
+      const formData = new FormData();
+      formData.append('file', selectedFile);
+
+      setUploadProgress('Enviando arquivo...');
+      const uploadResponse = await fetch('/api/upload', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (!uploadResponse.ok) {
+        throw new Error('Erro no upload');
+      }
+
+      const uploadResult = await uploadResponse.json();
+      setUploadProgress('Processando dados...');
+
+      // Enviar dados processados para IA
+      const analysisMessage = `Analise os dados do arquivo "${selectedFile.name}": ${JSON.stringify(uploadResult.file.processedData)}`;
+      await onSendMessage(analysisMessage);
+
+      setUploadProgress('Arquivo processado com sucesso!');
+      setSelectedFile(null);
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
+
+    } catch (error) {
+      setUploadProgress('Erro no upload: ' + error);
+    } finally {
+      setIsUploading(false);
+      setTimeout(() => setUploadProgress(''), 3000);
+    }
+  };
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    const file = e.dataTransfer.files[0];
+    if (file) {
+      setSelectedFile(file);
     }
   };
 
@@ -72,6 +137,72 @@ export default function ChatInterface({ onSendMessage, messages, isLoading }: Ch
         )}
         
         <div ref={messagesEndRef} />
+      </div>
+
+      {/* Área de upload */}
+      <div className="p-4 border-t bg-gray-50">
+        <div
+          onDragOver={handleDragOver}
+          onDrop={handleDrop}
+          className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 transition-colors"
+        >
+          <input
+            ref={fileInputRef}
+            type="file"
+            onChange={handleFileSelect}
+            accept=".csv,.xlsx,.xls,.pdf"
+            className="hidden"
+          />
+          
+          {!selectedFile ? (
+            <div>
+              <p className="text-gray-600 mb-2">
+                Arraste um arquivo aqui ou{' '}
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="text-blue-500 hover:text-blue-600 underline"
+                >
+                  clique para selecionar
+                </button>
+              </p>
+              <p className="text-sm text-gray-500">
+                Suporta: CSV, Excel (.xlsx, .xls), PDF
+              </p>
+            </div>
+          ) : (
+            <div>
+              <p className="text-gray-800 font-medium">{selectedFile.name}</p>
+              <p className="text-sm text-gray-500">
+                {(selectedFile.size / 1024 / 1024).toFixed(2)} MB
+              </p>
+              <div className="mt-2 space-x-2">
+                <button
+                  onClick={handleFileUpload}
+                  disabled={isUploading}
+                  className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 disabled:opacity-50"
+                >
+                  {isUploading ? 'Processando...' : 'Analisar'}
+                </button>
+                <button
+                  onClick={() => {
+                    setSelectedFile(null);
+                    if (fileInputRef.current) fileInputRef.current.value = '';
+                  }}
+                  className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
+                >
+                  Cancelar
+                </button>
+              </div>
+            </div>
+          )}
+          
+          {uploadProgress && (
+            <div className="mt-2 p-2 bg-blue-100 text-blue-800 rounded text-sm">
+              {uploadProgress}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Formulário de entrada */}

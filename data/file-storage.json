@@ -1,0 +1,651 @@
+{
+  "files": [
+    {
+      "id": "test001",
+      "filename": "simples.csv",
+      "originalName": "teste-simples.csv",
+      "size": 100,
+      "type": "text/csv",
+      "uploadedAt": "2025-08-26T02:44:39.256Z",
+      "processedData": [
+        {
+          "nome": "João",
+          "idade": 25
+        }
+      ]
+    },
+    {
+      "id": "test002",
+      "filename": "especiais.csv",
+      "originalName": "teste-ção-ã.csv",
+      "size": 200,
+      "type": "text/csv",
+      "uploadedAt": "2025-08-26T02:44:39.373Z",
+      "processedData": [
+        {
+          "nome": "José Carlos",
+          "cidade": "São Paulo"
+        }
+      ]
+    },
+    {
+      "id": "test003",
+      "filename": "grande.xlsx",
+      "originalName": "planilha-grande.xlsx",
+      "size": 50000,
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "uploadedAt": "2025-08-26T02:44:39.504Z",
+      "processedData": [
+        {
+          "id": 1,
+          "nome": "Usuario 1",
+          "valor": 325.1812951729912
+        },
+        {
+          "id": 2,
+          "nome": "Usuario 2",
+          "valor": 757.8780496180218
+        },
+        {
+          "id": 3,
+          "nome": "Usuario 3",
+          "valor": 418.04599493861036
+        },
+        {
+          "id": 4,
+          "nome": "Usuario 4",
+          "valor": 786.9610043550641
+        },
+        {
+          "id": 5,
+          "nome": "Usuario 5",
+          "valor": 157.90278190849816
+        },
+        {
+          "id": 6,
+          "nome": "Usuario 6",
+          "valor": 729.9370000969382
+        },
+        {
+          "id": 7,
+          "nome": "Usuario 7",
+          "valor": 279.39460669467655
+        },
+        {
+          "id": 8,
+          "nome": "Usuario 8",
+          "valor": 161.09488364369918
+        },
+        {
+          "id": 9,
+          "nome": "Usuario 9",
+          "valor": 895.6195767905247
+        },
+        {
+          "id": 10,
+          "nome": "Usuario 10",
+          "valor": 885.067842394114
+        },
+        {
+          "id": 11,
+          "nome": "Usuario 11",
+          "valor": 892.2191726685992
+        },
+        {
+          "id": 12,
+          "nome": "Usuario 12",
+          "valor": 892.4953800181405
+        },
+        {
+          "id": 13,
+          "nome": "Usuario 13",
+          "valor": 270.0989568690966
+        },
+        {
+          "id": 14,
+          "nome": "Usuario 14",
+          "valor": 982.2552624007362
+        },
+        {
+          "id": 15,
+          "nome": "Usuario 15",
+          "valor": 517.9239785190174
+        },
+        {
+          "id": 16,
+          "nome": "Usuario 16",
+          "valor": 483.94620604886353
+        },
+        {
+          "id": 17,
+          "nome": "Usuario 17",
+          "valor": 424.7023555444186
+        },
+        {
+          "id": 18,
+          "nome": "Usuario 18",
+          "valor": 151.62982863615304
+        },
+        {
+          "id": 19,
+          "nome": "Usuario 19",
+          "valor": 189.0493007628077
+        },
+        {
+          "id": 20,
+          "nome": "Usuario 20",
+          "valor": 419.15827895219036
+        },
+        {
+          "id": 21,
+          "nome": "Usuario 21",
+          "valor": 178.05665300204097
+        },
+        {
+          "id": 22,
+          "nome": "Usuario 22",
+          "valor": 41.46150326040687
+        },
+        {
+          "id": 23,
+          "nome": "Usuario 23",
+          "valor": 484.53621333946205
+        },
+        {
+          "id": 24,
+          "nome": "Usuario 24",
+          "valor": 868.2677339845111
+        },
+        {
+          "id": 25,
+          "nome": "Usuario 25",
+          "valor": 115.21264873335846
+        },
+        {
+          "id": 26,
+          "nome": "Usuario 26",
+          "valor": 436.93586293965524
+        },
+        {
+          "id": 27,
+          "nome": "Usuario 27",
+          "valor": 822.5889951874889
+        },
+        {
+          "id": 28,
+          "nome": "Usuario 28",
+          "valor": 794.1064192071279
+        },
+        {
+          "id": 29,
+          "nome": "Usuario 29",
+          "valor": 280.2393875944617
+        },
+        {
+          "id": 30,
+          "nome": "Usuario 30",
+          "valor": 356.15418472280834
+        },
+        {
+          "id": 31,
+          "nome": "Usuario 31",
+          "valor": 537.902782268918
+        },
+        {
+          "id": 32,
+          "nome": "Usuario 32",
+          "valor": 160.57216912346993
+        },
+        {
+          "id": 33,
+          "nome": "Usuario 33",
+          "valor": 678.9286199030655
+        },
+        {
+          "id": 34,
+          "nome": "Usuario 34",
+          "valor": 822.5547477044656
+        },
+        {
+          "id": 35,
+          "nome": "Usuario 35",
+          "valor": 605.7474484237765
+        },
+        {
+          "id": 36,
+          "nome": "Usuario 36",
+          "valor": 83.98453705120245
+        },
+        {
+          "id": 37,
+          "nome": "Usuario 37",
+          "valor": 796.0255468975867
+        },
+        {
+          "id": 38,
+          "nome": "Usuario 38",
+          "valor": 288.15073871378183
+        },
+        {
+          "id": 39,
+          "nome": "Usuario 39",
+          "valor": 310.5786803903297
+        },
+        {
+          "id": 40,
+          "nome": "Usuario 40",
+          "valor": 575.2365090968018
+        },
+        {
+          "id": 41,
+          "nome": "Usuario 41",
+          "valor": 885.0978903156952
+        },
+        {
+          "id": 42,
+          "nome": "Usuario 42",
+          "valor": 449.821473537309
+        },
+        {
+          "id": 43,
+          "nome": "Usuario 43",
+          "valor": 858.1058132092221
+        },
+        {
+          "id": 44,
+          "nome": "Usuario 44",
+          "valor": 446.8225068011643
+        },
+        {
+          "id": 45,
+          "nome": "Usuario 45",
+          "valor": 913.0051436164262
+        },
+        {
+          "id": 46,
+          "nome": "Usuario 46",
+          "valor": 807.7673116092277
+        },
+        {
+          "id": 47,
+          "nome": "Usuario 47",
+          "valor": 47.992607219043414
+        },
+        {
+          "id": 48,
+          "nome": "Usuario 48",
+          "valor": 780.072453057739
+        },
+        {
+          "id": 49,
+          "nome": "Usuario 49",
+          "valor": 397.5202656446072
+        },
+        {
+          "id": 50,
+          "nome": "Usuario 50",
+          "valor": 915.0232413368321
+        },
+        {
+          "id": 51,
+          "nome": "Usuario 51",
+          "valor": 930.5679061305965
+        },
+        {
+          "id": 52,
+          "nome": "Usuario 52",
+          "valor": 425.0656854535231
+        },
+        {
+          "id": 53,
+          "nome": "Usuario 53",
+          "valor": 19.945684798134078
+        },
+        {
+          "id": 54,
+          "nome": "Usuario 54",
+          "valor": 257.63227429382175
+        },
+        {
+          "id": 55,
+          "nome": "Usuario 55",
+          "valor": 370.1555850816408
+        },
+        {
+          "id": 56,
+          "nome": "Usuario 56",
+          "valor": 509.63742903174716
+        },
+        {
+          "id": 57,
+          "nome": "Usuario 57",
+          "valor": 523.3612476412458
+        },
+        {
+          "id": 58,
+          "nome": "Usuario 58",
+          "valor": 330.2870183273028
+        },
+        {
+          "id": 59,
+          "nome": "Usuario 59",
+          "valor": 359.0255429148902
+        },
+        {
+          "id": 60,
+          "nome": "Usuario 60",
+          "valor": 830.2748035208483
+        },
+        {
+          "id": 61,
+          "nome": "Usuario 61",
+          "valor": 511.97267158767966
+        },
+        {
+          "id": 62,
+          "nome": "Usuario 62",
+          "valor": 254.86732583260917
+        },
+        {
+          "id": 63,
+          "nome": "Usuario 63",
+          "valor": 432.5010388099202
+        },
+        {
+          "id": 64,
+          "nome": "Usuario 64",
+          "valor": 873.0529472357865
+        },
+        {
+          "id": 65,
+          "nome": "Usuario 65",
+          "valor": 769.0183095058077
+        },
+        {
+          "id": 66,
+          "nome": "Usuario 66",
+          "valor": 132.45671036377837
+        },
+        {
+          "id": 67,
+          "nome": "Usuario 67",
+          "valor": 861.9458943699277
+        },
+        {
+          "id": 68,
+          "nome": "Usuario 68",
+          "valor": 848.9662576857204
+        },
+        {
+          "id": 69,
+          "nome": "Usuario 69",
+          "valor": 656.9685553307896
+        },
+        {
+          "id": 70,
+          "nome": "Usuario 70",
+          "valor": 690.7303042994927
+        },
+        {
+          "id": 71,
+          "nome": "Usuario 71",
+          "valor": 877.544995561731
+        },
+        {
+          "id": 72,
+          "nome": "Usuario 72",
+          "valor": 397.7384817105907
+        },
+        {
+          "id": 73,
+          "nome": "Usuario 73",
+          "valor": 710.1888883522303
+        },
+        {
+          "id": 74,
+          "nome": "Usuario 74",
+          "valor": 253.8693625851709
+        },
+        {
+          "id": 75,
+          "nome": "Usuario 75",
+          "valor": 296.351044872997
+        },
+        {
+          "id": 76,
+          "nome": "Usuario 76",
+          "valor": 449.5802485462915
+        },
+        {
+          "id": 77,
+          "nome": "Usuario 77",
+          "valor": 556.5672771503258
+        },
+        {
+          "id": 78,
+          "nome": "Usuario 78",
+          "valor": 662.3062290602322
+        },
+        {
+          "id": 79,
+          "nome": "Usuario 79",
+          "valor": 498.2138092113121
+        },
+        {
+          "id": 80,
+          "nome": "Usuario 80",
+          "valor": 380.0782818774622
+        },
+        {
+          "id": 81,
+          "nome": "Usuario 81",
+          "valor": 474.2092376763367
+        },
+        {
+          "id": 82,
+          "nome": "Usuario 82",
+          "valor": 753.7243183998477
+        },
+        {
+          "id": 83,
+          "nome": "Usuario 83",
+          "valor": 724.1293196293805
+        },
+        {
+          "id": 84,
+          "nome": "Usuario 84",
+          "valor": 216.26595351257393
+        },
+        {
+          "id": 85,
+          "nome": "Usuario 85",
+          "valor": 797.1142838693412
+        },
+        {
+          "id": 86,
+          "nome": "Usuario 86",
+          "valor": 763.129498836093
+        },
+        {
+          "id": 87,
+          "nome": "Usuario 87",
+          "valor": 166.56567434223135
+        },
+        {
+          "id": 88,
+          "nome": "Usuario 88",
+          "valor": 542.2170624200364
+        },
+        {
+          "id": 89,
+          "nome": "Usuario 89",
+          "valor": 999.1331546003731
+        },
+        {
+          "id": 90,
+          "nome": "Usuario 90",
+          "valor": 294.59384008662494
+        },
+        {
+          "id": 91,
+          "nome": "Usuario 91",
+          "valor": 293.41495022680044
+        },
+        {
+          "id": 92,
+          "nome": "Usuario 92",
+          "valor": 742.4517564485088
+        },
+        {
+          "id": 93,
+          "nome": "Usuario 93",
+          "valor": 394.1581928731568
+        },
+        {
+          "id": 94,
+          "nome": "Usuario 94",
+          "valor": 838.984971955207
+        },
+        {
+          "id": 95,
+          "nome": "Usuario 95",
+          "valor": 924.0922176707231
+        },
+        {
+          "id": 96,
+          "nome": "Usuario 96",
+          "valor": 383.65582767016105
+        },
+        {
+          "id": 97,
+          "nome": "Usuario 97",
+          "valor": 455.13117040755935
+        },
+        {
+          "id": 98,
+          "nome": "Usuario 98",
+          "valor": 146.93465231121928
+        },
+        {
+          "id": 99,
+          "nome": "Usuario 99",
+          "valor": 79.553994007182
+        },
+        {
+          "id": 100,
+          "nome": "Usuario 100",
+          "valor": 607.9642374019681
+        }
+      ]
+    },
+    {
+      "id": "1756177976104",
+      "filename": "1756177976104-8259431-debug-test.csv",
+      "originalName": "debug-test.csv",
+      "size": 28,
+      "type": "text/csv",
+      "uploadedAt": "2025-08-26T03:12:56.116Z",
+      "processedData": [
+        {
+          "nome": "João",
+          "idade": 30
+        },
+        {
+          "nome": "Maria",
+          "idade": 25
+        }
+      ]
+    },
+    {
+      "id": "1756178024396",
+      "filename": "1756178024396-134337877-test-data-csv.csv",
+      "originalName": "test-data-csv.csv",
+      "size": 152,
+      "type": "text/csv",
+      "uploadedAt": "2025-08-26T03:13:44.399Z",
+      "processedData": [
+        {
+          "nome": "João Silva",
+          "idade": 30,
+          "cargo": "Desenvolvedor",
+          "salario": 5000
+        },
+        {
+          "nome": "Maria Santos",
+          "idade": 25,
+          "cargo": "Designer",
+          "salario": 4500
+        },
+        {
+          "nome": "Pedro Oliveira",
+          "idade": 35,
+          "cargo": "Gerente",
+          "salario": 6000
+        },
+        {
+          "nome": "Ana Costa",
+          "idade": 28,
+          "cargo": "Analista",
+          "salario": 4000
+        }
+      ]
+    },
+    {
+      "id": "1756178124911",
+      "filename": "1756178124911-955753917-test.csv",
+      "originalName": "test.csv",
+      "size": 28,
+      "type": "text/csv",
+      "uploadedAt": "2025-08-26T03:15:24.914Z",
+      "processedData": [
+        {
+          "nome": "João",
+          "idade": 30
+        },
+        {
+          "nome": "Maria",
+          "idade": 25
+        }
+      ]
+    },
+    {
+      "id": "1756178165161",
+      "filename": "1756178165161-830684864-test.csv",
+      "originalName": "test.csv",
+      "size": 28,
+      "type": "text/csv",
+      "uploadedAt": "2025-08-26T03:16:05.164Z",
+      "processedData": [
+        {
+          "nome": "João",
+          "idade": 30
+        },
+        {
+          "nome": "Maria",
+          "idade": 25
+        }
+      ]
+    },
+    {
+      "id": "1756178243150",
+      "filename": "1756178243150-349181232-teste-final.csv",
+      "originalName": "teste-final.csv",
+      "size": 52,
+      "type": "text/csv",
+      "uploadedAt": "2025-08-26T03:17:23.152Z",
+      "processedData": [
+        {
+          "produto": "Notebook",
+          "quantidade": 5,
+          "preco": 2500
+        },
+        {
+          "produto": "Mouse",
+          "quantidade": 20,
+          "preco": 30
+        }
+      ]
+    }
+  ],
+  "sessionId": "default"
+}

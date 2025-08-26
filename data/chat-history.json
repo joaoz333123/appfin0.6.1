@@ -119,6 +119,42 @@
       "content": "Claro! Para criar uma tabela com eixos X e Y, geralmente estamos falando de pares de dados onde X é a variável independente e Y é a variável dependente (ou um resultado relacionado a X).\n\nAqui está um exemplo simples de uma tabela X-Y, onde Y é simplesmente igual a X:\n\n```\n+---+---+\n| X | Y |\n+---+---+\n| 1 | 1 |\n| 2 | 2 |\n| 3 | 3 |\n| 4 | 4 |\n| 5 | 5 |\n+---+---+\n```\n\n**Explicação:**\n\n*   **Eixo X (Coluna X):** Representa a variável independente. No contexto de um gráfico, seria o eixo horizontal.\n*   **Eixo Y (Coluna Y):** Representa a variável dependente, cujo valor muda em resposta ao valor de X. No contexto de um gráfico, seria o eixo vertical.\n\nEste tipo de tabela é fundamental para visualizar dados em um gráfico cartesiano, onde cada linha representa um ponto (X, Y) que pode ser plotado.\n\nVocê gostaria de uma tabela com dados específicos, para uma função matemática particular (ex: Y = X², Y = 2X + 3), ou com um número diferente de pontos? Ou talvez você queira uma explicação mais detalhada sobre como criar gráficos a partir desses dados?",
       "isUser": false,
       "timestamp": "2025-08-26T00:34:34.024Z"
+    },
+    {
+      "id": "msg-1756170711486-hiok2wwd5",
+      "content": "model",
+      "isUser": true,
+      "timestamp": "2025-08-26T01:11:51.486Z"
+    },
+    {
+      "id": "msg-1756170715855-r4mgikz11",
+      "content": "Eu sou um modelo de linguagem grande, treinado pelo Google.",
+      "isUser": false,
+      "timestamp": "2025-08-26T01:11:55.855Z"
+    },
+    {
+      "id": "msg-1756170724028-1w81u4fz6",
+      "content": "qual versao",
+      "isUser": true,
+      "timestamp": "2025-08-26T01:12:04.028Z"
+    },
+    {
+      "id": "msg-1756170727458-qm0082eq8",
+      "content": "Como um modelo de linguagem grande, eu não tenho um número de versão específico como um software tradicional. Eu sou um sistema que está em constante desenvolvimento e aprimoramento pelo Google.",
+      "isUser": false,
+      "timestamp": "2025-08-26T01:12:07.458Z"
+    },
+    {
+      "id": "msg-1756170739208-27hpqukkw",
+      "content": "qual data da sua base de atualizacao",
+      "isUser": true,
+      "timestamp": "2025-08-26T01:12:19.208Z"
+    },
+    {
+      "id": "msg-1756170745672-eny4or4a2",
+      "content": "Minha base de conhecimento é constantemente aprimorada. O treinamento principal que formou a maior parte da minha base de dados foi realizado com informações da internet até **início de 2023**.\n\nPortanto, eventos ou desenvolvimentos que ocorreram após essa data podem não estar incluídos no meu conhecimento original, a menos que tenham sido adicionados em atualizações posteriores ou eu tenha a capacidade de buscar informações em tempo real.",
+      "isUser": false,
+      "timestamp": "2025-08-26T01:12:25.672Z"
     }
   ],
   "sessionId": "session-1756158705196"

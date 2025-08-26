@@ -1,0 +1,42 @@
+---
+alwaysApply: true
+---
+# SEÇÃO 6: SINAIS DE ALERTA E AÇÕES IMEDIATAS
+
+## Sinais Críticos de Alerta
+
+### 🚨 IA está criando muitos arquivos novos
+**AÇÃO IMEDIATA:** 
+- Use o prompt "PARE. Over-engineering"
+- Exija consolidar funcionalidade em máximo 3 arquivos
+- Provavelmente está complicando demais
+
+### 🚨 IA sugere "refatoração" ou "melhoria da arquitetura"
+**AÇÃO IMEDIATA:**
+- Recuse categoricamente
+- Use prompt "NÃO mude versões"
+- Mantenha foco na funcionalidade específica solicitada
+
+### 🚨 IA menciona padrões complexos (MVC, Repository, Clean Architecture, etc.)
+**AÇÃO IMEDIATA:**
+- Pare imediatamente
+- Peça abordagem mais simples usando componentes básicos
+- Use prompt "PARE. Over-engineering"
+
+### 🚨 Código parou de funcionar após mudança
+**AÇÃO IMEDIATA:**
+- Use "Prompt de Debug" 
+- Considere voltar à versão anterior (git reset)
+- NÃO aceite "consertos" que adicionem complexidade
+
+### 🚨 IA quer implementar múltiplas features "relacionadas"
+**AÇÃO IMEDIATA:**
+- Pare imediatamente
+- Use prompt "Você está se desviando do objetivo"
+- Uma feature por vez, SEMPRE
+
+### 🚨 IA sugere adicionar dependências "úteis" ou "que vão precisar depois"
+**AÇÃO IMEDIATA:**
+- Recuse
+- Use processo de validação de dependência
+- Adicione apenas quando necessário para funcionalidade atual

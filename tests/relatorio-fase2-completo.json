@@ -1,0 +1,157 @@
+{
+  "timestamp": "2025-08-26T03:13:44.280Z",
+  "fase": "Fase 2 - Upload de Arquivos",
+  "resultadoGeral": "❌ Fase 2 com problemas críticos",
+  "sucessoPercentual": 0,
+  "statusProdução": "NÃO PRONTO PARA PRODUÇÃO",
+  "fluxosTestados": [
+    {
+      "id": "csv-end-to-end",
+      "nome": "Fluxo completo CSV",
+      "status": "falha",
+      "etapas": {
+        "upload": "sucesso",
+        "processamento": "sucesso",
+        "storage": "sucesso",
+        "analiseIA": "pendente"
+      },
+      "tempos": {
+        "upload": 103,
+        "analiseIA": 10229
+      },
+      "dadosProcessados": [
+        {
+          "nome": "João Silva",
+          "idade": 30,
+          "cargo": "Desenvolvedor",
+          "salario": 5000
+        },
+        {
+          "nome": "Maria Santos",
+          "idade": 25,
+          "cargo": "Designer",
+          "salario": 4500
+        },
+        {
+          "nome": "Pedro Oliveira",
+          "idade": 35,
+          "cargo": "Gerente",
+          "salario": 6000
+        },
+        {
+          "nome": "Ana Costa",
+          "idade": 28,
+          "cargo": "Analista",
+          "salario": 4000
+        }
+      ],
+      "respostaIA": null,
+      "erro": "IA não forneceu resposta válida"
+    },
+    {
+      "id": "excel-end-to-end",
+      "nome": "Fluxo completo Excel",
+      "status": "falha",
+      "etapas": {
+        "upload": "pendente",
+        "processamento": "pendente",
+        "storage": "pendente",
+        "analiseIA": "pendente"
+      },
+      "tempos": {
+        "upload": 169
+      },
+      "dadosProcessados": null,
+      "respostaIA": null,
+      "erro": "Upload falhou: 500 - {\"error\":\"Erro ao processar arquivo\"}"
+    },
+    {
+      "id": "pdf-end-to-end",
+      "nome": "Fluxo completo PDF",
+      "status": "falha",
+      "etapas": {
+        "upload": "pendente",
+        "processamento": "pendente",
+        "storage": "pendente",
+        "analiseIA": "pendente"
+      },
+      "tempos": {
+        "upload": 836
+      },
+      "dadosProcessados": null,
+      "respostaIA": null,
+      "erro": "Upload falhou: 500 - {\"error\":\"Erro ao processar arquivo\"}"
+    },
+    {
+      "id": "chat-basico",
+      "nome": "Chat básico funcionando",
+      "status": "falha",
+      "etapas": {
+        "envioMensagem": "em_andamento",
+        "respostaIA": "pendente"
+      },
+      "tempos": {
+        "resposta": 1034
+      },
+      "respostaIA": null,
+      "erro": "Chat básico não forneceu resposta válida"
+    }
+  ],
+  "validacoesSistema": [
+    {
+      "id": "storage-persistence",
+      "nome": "Persistência do storage",
+      "status": "sucesso",
+      "detalhes": "5 arquivos no storage"
+    },
+    {
+      "id": "performance-upload",
+      "nome": "Performance de upload",
+      "status": "sucesso",
+      "detalhes": "Tempo médio: 369ms"
+    },
+    {
+      "id": "integridade-funcional",
+      "nome": "Integridade funcional",
+      "status": "falha",
+      "detalhes": "0/4 fluxos funcionando"
+    }
+  ],
+  "problemas": [
+    "Falha no fluxo csv: IA não forneceu resposta válida",
+    "Falha no fluxo excel: Upload falhou: 500 - {\"error\":\"Erro ao processar arquivo\"}",
+    "Falha no fluxo pdf: Upload falhou: 500 - {\"error\":\"Erro ao processar arquivo\"}",
+    "Chat básico falhou: Chat básico não forneceu resposta válida"
+  ],
+  "recomendacoes": [
+    "Problemas críticos devem ser corrigidos"
+  ],
+  "metricas": {
+    "tempoMedioUpload": 369,
+    "tempoMedioIA": 10229,
+    "taxaSucessoTotal": 0
+  },
+  "logDetalhado": [
+    "🚀 Iniciando teste completo da Fase 2",
+    "📅 Timestamp: 2025-08-26T03:13:44.280Z",
+    "🧹 Limpando dados de teste anteriores...",
+    "🚀 Iniciando fluxo CSV: test-data-csv.csv",
+    "📤 Executando upload de test-data-csv.csv...",
+    "✅ Upload concluído em 103ms",
+    "✅ Dados processados: 278 chars",
+    "💾 Verificando storage...",
+    "✅ Arquivo encontrado no storage: 1756178024396",
+    "🤖 Testando análise da IA...",
+    "❌ Falha no fluxo CSV: IA não forneceu resposta válida",
+    "🚀 Iniciando fluxo EXCEL: test-data-excel.xlsx",
+    "📤 Executando upload de test-data-excel.xlsx...",
+    "❌ Falha no fluxo EXCEL: Upload falhou: 500 - {\"error\":\"Erro ao processar arquivo\"}",
+    "🚀 Iniciando fluxo PDF: test-data-pdf.pdf",
+    "📤 Executando upload de test-data-pdf.pdf...",
+    "❌ Falha no fluxo PDF: Upload falhou: 500 - {\"error\":\"Erro ao processar arquivo\"}",
+    "💬 Testando chat básico...",
+    "❌ Chat básico falhou: Chat básico não forneceu resposta válida",
+    "🔍 Executando validações do sistema...",
+    "✅ Storage persistente com 5 arquivos"
+  ]
+}

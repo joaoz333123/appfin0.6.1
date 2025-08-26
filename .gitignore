@@ -10,3 +10,4 @@
 
 # Local Environment
 .env.local
+data/chat-history.json
