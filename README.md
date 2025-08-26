@@ -8,7 +8,7 @@
 ### ✅ FASE 1 - CHAT BÁSICO: **COMPLETA E FUNCIONAL**
 
 **Data da Atualização:** 19 de Dezembro de 2024  
-**Versão:** 0.6.1  
+**Versão:** 0.6.1.1  
 **Status:** ✅ **PRONTO PARA PRODUÇÃO**
 
 #### **FASE 0 - FUNCIONALIDADES IMPLEMENTADAS:**
@@ -32,7 +32,7 @@
 - ✅ **Responsividade** - Funciona em desktop e mobile
 
 #### **DEPENDÊNCIAS INSTALADAS E TESTADAS:**
-- ✅ **@google/generative-ai@0.21.0** - Integração Gemini funcionando
+- ✅ **@google/genai@0.2.0** - Integração Gemini 2.0 (migração concluída)
 - ✅ **papaparse@5.5.3** - Processamento CSV testado e validado
 - ✅ **xlsx@0.20.3** - Processamento Excel testado e validado
 - ✅ **multer@2.0.2** - Upload de arquivos configurado
@@ -107,9 +107,9 @@
   - **Status:** ✅ Disponível para implementação
 
 #### **🤖 INTELIGÊNCIA ARTIFICIAL:**
-- ✅ **@google/generative-ai@0.21.0** - Integração Gemini
+- ✅ **@google/genai@0.2.0** - Integração Gemini 2.0
   - **Funcionalidade:** Chat com IA, processamento de contexto
-  - **Status:** ✅ Funcionando perfeitamente
+  - **Status:** ✅ Migração concluída e funcionando perfeitamente
 
 ### **🔒 VERIFICAÇÕES DE SEGURANÇA:**
 - ✅ **Vulnerabilidades corrigidas:** xlsx atualizado para 0.20.3
@@ -123,6 +123,14 @@
 - ✅ **Build:** Compilação de produção bem-sucedida
 - ✅ **TypeScript:** Verificação de tipos sem erros
 - ✅ **Compatibilidade:** Integração com stack base funcionando
+
+### **🔄 MIGRAÇÃO REALIZADA (19/12/2024):**
+- ✅ **@google/generative-ai@0.21.0 → @google/genai@0.2.0**
+- ✅ **Motivo:** Google anunciou descontinuação da biblioteca legada
+- ✅ **Benefício:** Acesso aos modelos Gemini 2.0 mais recentes
+- ✅ **Processo:** Seguido protocolo de emergência para mudança de versão
+- ✅ **Resultado:** Migração bem-sucedida sem quebrar funcionalidades
+- ✅ **Testes:** Build, TypeScript e funcionalidades validadas
 
 ---
 
@@ -191,7 +199,7 @@ A plataforma é construída utilizando Next.js com App Router e TypeScript como 
 A autenticação é implementada através de NextAuth com integração Google utilizando JWT sem necessidade de banco de dados tradicional. O sistema de storage é diferenciado por ambiente, utilizando arquivos JSON locais durante desenvolvimento e Vercel Blob ou KV em produção, mantendo simplicidade e confiabilidade sem complexidade de SQL.
 
 ### Integração com Inteligência Artificial
-A IA é baseada em Gemini 2.5 Flash Lite com capacidades de reasoning, Files API, streaming e ferramentas customizadas para leitura e escrita no storage, além de web fetch para pesquisas externas. O processamento de dados utiliza bibliotecas especializadas como papaparse para CSV e xlsx para planilhas Excel, com visualizações geradas através de vega-lite ou echarts.
+A IA é baseada em Gemini 2.0 Flash com capacidades de reasoning, Files API, streaming e ferramentas customizadas para leitura e escrita no storage, além de web fetch para pesquisas externas. Utiliza a nova SDK @google/genai para acesso aos modelos mais recentes. O processamento de dados utiliza bibliotecas especializadas como papaparse para CSV e xlsx para planilhas Excel, com visualizações geradas através de vega-lite ou echarts.
 
 ### Sistema de Interface Dinâmica via DSL JSON
 A funcionalidade de interface dinâmica é implementada através de um Domain Specific Language baseado em JSON, onde a IA cria "abas e páginas virtuais" renderizadas como popups modais. Este DSL suporta widgets diversos incluindo markdown, tabelas, gráficos, imagens, previews de documentos e blocos de código, com todas as configurações persistidas no storage para manutenção de estado entre sessões.
