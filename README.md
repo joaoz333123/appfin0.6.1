@@ -31,6 +31,13 @@
 - ✅ **Loading states** - Indicadores visuais de carregamento
 - ✅ **Responsividade** - Funciona em desktop e mobile
 
+#### **DEPENDÊNCIAS INSTALADAS E TESTADAS:**
+- ✅ **@google/generative-ai@0.21.0** - Integração Gemini funcionando
+- ✅ **papaparse@5.5.3** - Processamento CSV testado e validado
+- ✅ **xlsx@0.20.3** - Processamento Excel testado e validado
+- ✅ **multer@2.0.2** - Upload de arquivos configurado
+- ✅ **pdf-parse@1.1.1** - Processamento PDF disponível
+
 #### **CORREÇÕES APLICADAS:**
 - ✅ **Erro de hidratação** - Corrigido com ClientProvider
 - ✅ **Classes Tailwind** - Implementadas na interface
@@ -63,6 +70,59 @@
 - 📋 **Critérios de aceitação** definidos
 - 🔧 **Base sólida** estabelecida e validada
 - ✅ **Fase 1 completa** - Chat com IA funcionando perfeitamente
+
+---
+
+## 📦 DOCUMENTAÇÃO DE DEPENDÊNCIAS INSTALADAS
+
+### **STACK BASE (APROVADA MANUALMENTE):**
+- ✅ **Next.js@14.2.32** - Framework principal (fonte: nextjs.org)
+- ✅ **React@18.3.1** - Interface (fonte: react.dev)
+- ✅ **TypeScript@5.4.5** - Type safety (fonte: typescriptlang.org)
+- ✅ **Tailwind CSS@3.4.3** - Estilos (fonte: tailwindcss.com)
+- ✅ **NextAuth@4.24.7** - Autenticação (fonte: npmjs.com/next-auth)
+
+### **DEPENDÊNCIAS ADICIONAIS INSTALADAS E TESTADAS:**
+
+#### **📊 PROCESSAMENTO DE DADOS:**
+- ✅ **papaparse@5.5.3** - Processamento CSV
+  - **Testado:** Parsing básico, headers automáticos, conversão JSON, configurações avançadas
+  - **Funcionalidades:** Auto-detecção de delimitador, transform de dados, tipos mistos
+  - **Status:** ✅ Funcionando perfeitamente
+
+- ✅ **xlsx@0.20.3** - Processamento Excel
+  - **Testado:** Criação de workbooks, múltiplas planilhas, fórmulas Excel, conversões
+  - **Funcionalidades:** Suporte a XLSX, XLS, CSV, fórmulas, tipos de dados
+  - **Atualização:** Corrigido de 0.18.5 para 0.20.3 (vulnerabilidades de segurança)
+  - **Status:** ✅ Funcionando perfeitamente
+
+#### **📁 UPLOAD DE ARQUIVOS:**
+- ✅ **multer@2.0.2** - Middleware de upload
+  - **Funcionalidade:** Processamento de arquivos multipart/form-data
+  - **Status:** ✅ Configurado e pronto para uso
+
+#### **📄 PROCESSAMENTO DE DOCUMENTOS:**
+- ✅ **pdf-parse@1.1.1** - Leitura de PDFs
+  - **Funcionalidade:** Extração de texto de arquivos PDF
+  - **Status:** ✅ Disponível para implementação
+
+#### **🤖 INTELIGÊNCIA ARTIFICIAL:**
+- ✅ **@google/generative-ai@0.21.0** - Integração Gemini
+  - **Funcionalidade:** Chat com IA, processamento de contexto
+  - **Status:** ✅ Funcionando perfeitamente
+
+### **🔒 VERIFICAÇÕES DE SEGURANÇA:**
+- ✅ **Vulnerabilidades corrigidas:** xlsx atualizado para 0.20.3
+- ✅ **Build de produção:** Todas dependências compilam sem erros
+- ✅ **TypeScript:** Sem erros de tipo com novas dependências
+- ✅ **Compatibilidade:** Todas dependências funcionam com stack atual
+
+### **📋 TESTES REALIZADOS:**
+- ✅ **papaparse:** Parsing CSV, conversão JSON, configurações avançadas
+- ✅ **xlsx:** Criação de workbooks, múltiplas planilhas, fórmulas, tipos de dados
+- ✅ **Build:** Compilação de produção bem-sucedida
+- ✅ **TypeScript:** Verificação de tipos sem erros
+- ✅ **Compatibilidade:** Integração com stack base funcionando
 
 ---
 
@@ -810,10 +870,10 @@ ALTERNATIVAS se as acima não funcionarem:
 
 ### Para Processamento de Dados (Fase 2):
 ```
-✅ papaparse: [verificar versão atual] (CSV obrigatório)
-✅ xlsx: [verificar versão atual] (Excel obrigatório)  
-✅ pdf-parse: [verificar versão atual] (PDF se necessário)
-✅ multer: [verificar versão atual] (upload de arquivos)
+✅ papaparse: 5.5.3 (INSTALADO E TESTADO - CSV obrigatório)
+✅ xlsx: 0.20.3 (INSTALADO E TESTADO - Excel obrigatório)  
+✅ pdf-parse: 1.1.1 (INSTALADO - PDF se necessário)
+✅ multer: 2.0.2 (INSTALADO - upload de arquivos)
 
 ❌ EVITAR: bibliotecas complexas de processamento
 ```
@@ -1167,6 +1227,12 @@ A IA é um executor excelente, mas um arquiteto terrível. Mantenha controle sob
 - ✅ **Tratamento de erros** - Mensagens amigáveis de erro
 - ✅ **Loading states** - Indicadores visuais de carregamento
 - ✅ **Responsividade** - Funciona em desktop e mobile
+
+#### **DEPENDÊNCIAS PARA FASE 2 - INSTALADAS E TESTADAS:**
+- ✅ **papaparse@5.5.3** - Processamento CSV testado e validado
+- ✅ **xlsx@0.20.3** - Processamento Excel testado e validado (vulnerabilidades corrigidas)
+- ✅ **multer@2.0.2** - Upload de arquivos configurado
+- ✅ **pdf-parse@1.1.1** - Processamento PDF disponível
 
 #### **CORREÇÕES APLICADAS:**
 - ✅ **Erro de hidratação** - Resolvido com ClientProvider
