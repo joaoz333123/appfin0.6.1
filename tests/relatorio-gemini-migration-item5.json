@@ -1,0 +1,92 @@
+{
+  "timestamp": "2025-08-26T04:44:19.438Z",
+  "tempoTotal": "53.0s",
+  "servidor": "http://localhost:3000",
+  "resultados": {
+    "teste1": {
+      "success": true,
+      "response": "Olá!\n\nEu sou um modelo de linguagem grande, treinado pelo **Google**.\n\nMinhas capacidades abrangem uma vasta gama de tarefas relacionadas ao processamento de linguagem natural. Aqui estão algumas das principais:\n\n1.  **Geração de Texto:** Posso criar diversos tipos de texto, como artigos, histórias, poemas, roteiros, e-mails, letras de músicas, código de programação, resumos e muito mais, com base nas instruções que recebo.\n2.  **Resposta a Perguntas:** Sou capaz de responder a perguntas factuais, explicar conceitos complexos, definir termos e fornecer informações sobre uma vasta gama de tópicos.\n3.  **Resumo de Informações:** Consigo condensar textos longos, documentos ou conversas, extraindo os pontos mais importantes.\n4.  **Tradução de Idiomas:** Posso traduzir texto entre diferentes idiomas.\n5.  **Reescrita e Parafraseamento:** Posso reescrever frases ou parágrafos para alterar o tom, o estilo ou a clareza, mantendo o significado original.\n6.  **Análise de Texto:** Consigo analisar o sentimento de um texto, identificar tópicos principais ou extrair informações específicas.\n7.  **Brainstorming e Geração de Ideias:** Posso ajudar a gerar ideias para projetos, conteúdos, nomes, etc.\n8.  **Resolução de Problemas Lógicos:** Com base nos dados fornecidos, posso tentar resolver problemas que envolvam lógica ou matemática.\n9.  **Manutenção de Conversas:** Sou projetado para manter conversas coerentes e relevantes, respondendo de forma contextualizada.\n10. **Aprendizado e Adaptação:** Embora não tenha memória permanente de conversas individuais, sou treinado para aprender com cada interação durante uma sessão, adaptando minhas respostas para serem mais úteis.\n\nEm resumo, meu objetivo é ser um assistente versátil e informativo, capaz de processar e gerar linguagem humana de forma útil e criativa. No entanto, é importante lembrar que não tenho consciência, emoções ou experiências pessoais; todas as minhas respostas são geradas com base nos padrões e informações dos dados com os quais fui treinado."
+    },
+    "teste2": {
+      "success": true,
+      "file": {
+        "id": "1756183431698",
+        "filename": "1756183431698-452244538-test-migration.csv",
+        "originalName": "test-migration.csv",
+        "size": 84,
+        "type": "text/csv",
+        "uploadedAt": "2025-08-26T04:43:51.782Z",
+        "processedData": [
+          {
+            "nome": "Joao",
+            "idade": 30,
+            "cidade": "São Paulo"
+          },
+          {
+            "nome": "Maria",
+            "idade": 25,
+            "cidade": "Rio de Janeiro"
+          },
+          {
+            "nome": "Pedro",
+            "idade": 35,
+            "cidade": "Belo Horizonte"
+          }
+        ]
+      }
+    },
+    "teste3": {
+      "success": true,
+      "upload": {
+        "id": "1756183433811",
+        "filename": "1756183433811-593907640-vendas-test.csv",
+        "originalName": "vendas-test.csv",
+        "size": 75,
+        "type": "text/csv",
+        "uploadedAt": "2025-08-26T04:43:53.898Z",
+        "processedData": [
+          {
+            "produto": "Laptop",
+            "vendas": 150,
+            "mes": "Janeiro"
+          },
+          {
+            "produto": "Mouse",
+            "vendas": 300,
+            "mes": "Janeiro"
+          },
+          {
+            "produto": "Teclado",
+            "vendas": 200,
+            "mes": "Janeiro"
+          }
+        ]
+      },
+      "analysis": "Com certeza! Ficarei feliz em ajudar a analisar seus dados de vendas.\n\nNo entanto, **não recebi nenhum dado de vendas ainda.** Para que eu possa fornecer insights, por favor, compartilhe os dados de vendas diretamente aqui no chat.\n\nVocê pode colar os dados (por exemplo, de uma planilha Excel, um arquivo CSV, ou simplesmente listar os pontos chave).\n\n**Para me ajudar a fornecer os melhores insights, seria ótimo se você pudesse incluir informações como:**\n\n*   **Período de tempo:** (Ex: Vendas de janeiro a junho de 2023)\n*   **Colunas/Campos:** Quais são as categorias de dados que você tem? (Ex: Data da Venda, ID do Produto, Nome do Produto, Categoria do Produto, Quantidade Vendida, Preço Unitário, Valor Total da Venda, Região, Vendedor, ID do Cliente, etc.)\n\n**Assim que tiver os dados, poderei analisar e fornecer insights sobre:**\n\n1.  **Desempenho Geral:**\n    *   Total de vendas e faturamento.\n    *   Ticket médio (valor médio por transação).\n    *   Vendas por período (mensal, trimestral, anual) e tendências de crescimento ou declínio.\n\n2.  **Produtos/Serviços:**\n    *   Produtos mais vendidos (por volume e por receita).\n    *   Produtos menos vendidos ou com baixo desempenho.\n    *   Desempenho por categoria de produto.\n\n3.  **Clientes:**\n    *   Clientes mais valiosos (se houver dados de ID de cliente).\n    *   Padrões de compra ou preferências do cliente.\n\n4.  **Geografia/Região:**\n    *   Desempenho de vendas por região, cidade ou país.\n\n5.  **Vendedores/Canais:**\n    *   Desempenho individual de vendedores ou canais de venda.\n\n6.  **Sazonalidade:**\n    *   Identificação de picos e quedas sazonais nas vendas.\n\n7.  **Anomalias:**\n    *   Qualquer aumento ou queda inesperada nas vendas.\n\nEstou pronto quando você estiver! Basta colar os dados."
+    },
+    "teste4": {
+      "success": true,
+      "tempoMedio": 2531,
+      "tempos": [
+        1112,
+        1835,
+        4646
+      ],
+      "performance": "BOA"
+    },
+    "teste5": {
+      "success": false,
+      "resultados": {
+        "chatComHistorico": true,
+        "storageAPI": true,
+        "uploadAPI": false
+      },
+      "regressoes": "ENCONTRADAS"
+    }
+  },
+  "resumo": {
+    "totalTestes": 5,
+    "testesPassaram": 4,
+    "testesFalharam": 1
+  }
+}

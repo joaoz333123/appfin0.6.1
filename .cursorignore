@@ -1,0 +1,2 @@
+# Remover .env.local do ignore para permitir acesso durante migração Gemini
+# .env.local

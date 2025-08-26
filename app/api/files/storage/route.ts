@@ -111,7 +111,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Erro detalhado no storage:', error);
     return NextResponse.json(
-      { error: 'Erro ao salvar arquivo', details: error.message },
+      { error: 'Erro ao salvar arquivo', details: error instanceof Error ? error.message : 'Erro desconhecido' },
       { status: 500 }
     );
   }
