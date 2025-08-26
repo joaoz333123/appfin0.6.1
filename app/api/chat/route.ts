@@ -1,7 +1,7 @@
-import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 import { NextRequest, NextResponse } from 'next/server';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,34 +15,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'API Key do Gemini não configurada' }, { status: 500 });
     }
 
-    const model = genAI.getGenerativeModel({ 
-      model: process.env.GEMINI_MODEL || 'gemini-2.5-flash',
-      generationConfig: {
-        temperature: 0.9,
-        topK: 40,
-        topP: 0.95,
-        maxOutputTokens: 2048,
-      },
-      safetySettings: [
-        {
-          category: HarmCategory.HARM_CATEGORY_HARASSMENT,
-          threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
-        },
-        {
-          category: HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-          threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
-        },
-        {
-          category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-          threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
-        },
-        {
-          category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-          threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
-        },
-      ],
-    });
-
     // Construir contexto com histórico se disponível
     let prompt = message;
     if (history.length > 0) {
@@ -53,12 +25,19 @@ export async function POST(request: NextRequest) {
       prompt = `Contexto da conversa:\n${contextMessages}\n\nUsuário: ${message}\n\nIA:`;
     }
 
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
+    const response = await ai.models.generateContent({
+      model: process.env.GEMINI_MODEL || 'gemini-2.0-flash-001',
+      contents: prompt,
+      config: {
+        temperature: 0.9,
+        topK: 40,
+        topP: 0.95,
+        maxOutputTokens: 2048,
+      },
+    });
 
     return NextResponse.json({ 
-      response: text,
+      response: response.text,
       timestamp: new Date().toISOString()
     });
 
